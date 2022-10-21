@@ -45,6 +45,9 @@ app.use(passport.session());
 app.use(require('connect-flash')());
 //Midlewares
 app.use(function(req, res, next){
+    res.locals.messages = require('express-messages')(req, res);
+    res.locals.sucess_msg = req.flash("sucess_msg");
+    res.locals.error_msg = req.flash("error_msg");
     res.locals.error = req.flash("error");
     res.locals.user = req.user || null;
     next();
