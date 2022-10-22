@@ -1,5 +1,5 @@
 # Sistema-de-Cadastro-e-Login-em-Node.js-Express
-Este é um sistema de login e registro de usuário usando Node.js, Express, Passport, Mongoose, EJS e alguns outros pacotes.
+Registro, acesso e autenticação de usuário em Node.js. Express, Passport, Mongoose, EJS e alguns outros pacotes.
 
 <h3>Para Rodar</h3>
 
