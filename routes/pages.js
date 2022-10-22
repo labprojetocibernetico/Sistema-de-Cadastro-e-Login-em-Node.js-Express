@@ -15,6 +15,15 @@ router.get('/', function(req, res){
 });
 
 router.post('/login', (req, res, next) => {
+    var login = req.body.login;
+    var password = req.body.password;
+
+    if( !req.body.login || typeof req.body.login == undefined || req.body.login ==null ||
+        !req.body.password || typeof req.body.password == undefined || req.body.password ==null){
+        req.flash('error',"Digite Usuário e Senha!");  
+        return res.redirect('/');
+    }
+    
     passport.authenticate('local', { 
         successRedirect: '/',
         failureRedirect: '/',
