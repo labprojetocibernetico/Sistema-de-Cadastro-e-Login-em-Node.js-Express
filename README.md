@@ -4,7 +4,7 @@ Registro, acesso e autenticação de usuário em Node.js. Express, Passport, Mon
 <h3>Para Rodar</h3>
 
 ```bash
-nodemon app.js
+node app.js
 ```
 O código está em execução
 
